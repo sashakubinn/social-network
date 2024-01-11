@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body {
+	height: 100vh;
+	color: #efeff3;
+	background: linear-gradient(to top right, #0f0104, #1f0a14) #0f0104;
+}
+
+.animation-slide-fade {
+	animation: slideFade 0.7s ease-in-out;
+}
+@keyframes slideFade {
+	from {
+		transform: translateX(-450px);
+		opacity: 0.4;
+	}
+	to {
+		transform: translateX(0);
+		opacity: 1;
+	}
+}
+.icon {
+	@apply text-[#7C7275] hover:text-white transition-colors duration-300;
+}

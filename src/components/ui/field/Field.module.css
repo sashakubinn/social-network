@@ -1,0 +1,12 @@
+.field {
+	@apply flex items-center relative;
+}
+.input {
+	@apply outline-none placeholder:text-[#666463] bg-transparent rounded;
+}
+.icon {
+	@apply ml-3;
+}
+.error {
+	@apply absolute -bottom-2 left-5 text-red-600 text-xs;
+}
